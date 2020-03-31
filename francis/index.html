@@ -5,44 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
 </head>
 <body>
-    <div class= "nav">
-        <ul>
-            <li><a href "#">Home</a></li>
-            <li><a href "#">About</a></li>
-            <li><a href "#">Menu</a></li>
-            <li><a href "#">News</a></li>
-             
-            
-            
-            
+    <ul class="about">
+        
+        <li><div class="cafename">Hike Cafe</div></li>
+        <li><a href ="navbar.html">Home</a></li>
+        <li><a href ="pagecafe.html">The Cafe</a></li>
+        <li><a href ="pagecater.html">Catering</a></li>
+        <li><a href ="pagenews.html">News</a></li>
+        <li><a href ="pageabout.html">About</a></li>
+        </div>
+    </ul>
 
 
-            
-
-            
-
-        </ul>
     <div class="sign-up-form">
     <h1>Register Here</h1>
-    <form>
+    <div id="imagec"> 
+        <img class="imagekk"  width="200px" height="200px" src = "images/images (6).jpeg" alt= "pic"></img>
+    <form name="Register" id="registerForm">
         <div class="tbox">
-        
-    <input type="name" class="input-box" placeholder="name">
+        <p>name</p>
+    <input type="name" id="name" placeholder="name">
     </div>
     <div class="tbox">
-
-    <input type="username" class="input-box" placeholder="username">
+<p>Email</p>
+    <input type="email" id="email" required placeholder="email">
     </div>
     <div class = "tbox">
-
-    <input type="password" class="input-box" placeholder="Password">
+<p>password</p>
+    <input type="password" id="password" reqiured placeholder="Password">
     </div>
     <p><input type="checkbox">I agree to the Terms and conditions</p>
-    <input class= "btn"type="submit" name="" value="sign">
-    <p>Do you have an account ?<a href="signin.html">sign-up-form</a></p>
+    <input class= "btn"type="submit" name="" value="signup">
+    <p>Do you have an account ?<a href="signin.html">login</p>
     </form>
+</div>
 </div>
 </body>
 </html>

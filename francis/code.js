@@ -1,39 +1,88 @@
-function validateform(){
-    var username= document.getElementById("username")
-    var password= document.getElementById("password")
-    var valid=true;
-    if(username.Value.length==0){
-        username.className="wrong-input";
-        username.nextElementSibling.innerHTML="username can't be blank";
-        valid=false;
-    }
-    if(password.Value.length<6){
-        password.className="wrong-input";
-        username.nextElementSibling.innerHTML="password cannot have more than 6";
-        valid=false;
-    }
-    return valid;
-}
-const form = document.querySelector("#login-form");
-const pass_reg
-let username = form.elements.className("username");
-let username = form.elements.className("password");
-username.addEventListener('input,validate');
-password.addEventListener('input,validate');
-
-
-form.addEventListener("submit",function(e){
-    e.preventDefault();
+//validate Register Form 
+$("#registerForm").validate({
+rules:{
+        name:{
+            required:true,
+            minlength:3,
+            accept:"[a-zA-Z]+"
+        },
+     
+     password:{
+         required:true,
+         minlength:5,
+         maxlength:20
+     },
     
-    alert("submitted");
-    return true;
+    email:{
+        required:true,
+        
+    }
+    },
+   messages:{
+       required:"Please Enter Your Name!",
+       minlength:"Your Name must contain letters only!"
+   },
+   password:{
+       required:"Please Provide Your password!",
+       minlength:"Your password must be atleast 5 characters long!"
+   },
+   
+   email:{
+    required:"Please Enter Your email!", 
+    username:"Please Enter valid eamil!"  
+   }
 });
-function validate(e){
-    let target = e.target.name;
-    if(target= "password"){
 
-        if(target= "username"){
+//validate Login Form
+$("#loginForm").validate({
+    rules:{
+        email:{
+            required:true,
+            
+            
 
-         }
+     },
+     password:{
+         required:true,
+     }
+
+    },
+    messages:{
+    
+email:{
+    required:"please Enter Email!",
+    email:"Please Enter valid Email!"
+},
+    
+    
+
+    
+    
+     password:{
+         required:"Please provide Your Password!"
+     }
+    }
+});
+function myFunction(){
+    document.getElementById("myDropdown").classList.toggle(show);
 }
+window.onclick = function(event){
+    if (!event.target.matches('.dropbtn'))
+
+{
+    var myDropdown=
+    document.getElementsByClassName("dropdown-contents");
+    var i;
+    for(i = 0;i < dropdowns.length; i++) 
+    {
+        var openDropdown = dropdowns[i];
+        (openDropdown.classList.contains('show'))
+        {
+openDropdown.classList.remove('show');
+        }
+    }
+}
+
+
+
 }

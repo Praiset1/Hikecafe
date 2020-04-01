@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="code.js"></script>
 </head>
 <body>
     <ul class="about">
-        
-        <li><div class="cafename">Hike Cafe</div></li>
-        <li><a href ="navbar.html">Home</a></li>
-        <li><a href ="pagecafe.html">The Cafe</a></li>
-        <li><a href ="pagecater.html">Catering</a></li>
-        <li><a href ="pagenews.html">News</a></li>
-        <li><a href ="pageabout.html">About</a></li>
+
+        <li>
+            <div id="logo"><img width="40px" height="40px" src="images/download.png" alt="pic"></img></div>
+        <li>
+        <li>
+            <!-- <div class="cafename">Hike Cafe</div> -->
+        </li>
+        <li><a href="navbar.html">Home</a></li>
+        <li><a href="pagecafe.html">The Cafe</a></li>
+        <li><a href="pagecater.html">Catering</a></li>
+        <li><a href="pagenews.html">News</a></li>
+        <li><a href="pageabout.html">About</a></li>
         </div>
     </ul>
 
 
     <div class="sign-up-form">
-    <h1>Register Here</h1>
-    <div id="imagec"> 
-        <img class="imagekk"  width="200px" height="200px" src = "images/images (6).jpeg" alt= "pic"></img>
-    <form name="Register" id="registerForm">
-        <div class="tbox">
-        <p>name</p>
-    <input type="name" id="name" placeholder="name">
+        <h1>Register Here</h1>
+        <div id="imagec">
+            <img class="imagekk" width="200px" height="200px" src="images/images (6).jpeg" alt="pic"></img>
+            <form name="Register" id="registerForm" action="" method="post">
+                <div class="tbox">
+                    <label>Name</label>
+                    <input type="name" name="name" placeholder="name">
+                </div>
+                <div class="tbox">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="email">
+                </div>
+                <div class="tbox">
+                    <label>password</label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <p><input type="checkbox">I agree to the Terms and conditions</p>
+                <input class="btn" type="submit" value="signup">
+                <p>Do you have an account ?<a href="login.html"> login</a></p>
+            </form>
+        </div>
     </div>
-    <div class="tbox">
-<p>Email</p>
-    <input type="email" id="email" required placeholder="email">
-    </div>
-    <div class = "tbox">
-<p>password</p>
-    <input type="password" id="password" reqiured placeholder="Password">
-    </div>
-    <p><input type="checkbox">I agree to the Terms and conditions</p>
-    <input class= "btn"type="submit" name="" value="signup">
-    <p>Do you have an account ?<a href="signin.html">login</p>
-    </form>
-</div>
-</div>
+
 </body>
+
 </html>
-
-
-
-   

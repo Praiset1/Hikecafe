@@ -62,7 +62,7 @@ email:{
          required:"Please provide Your Password!"
      }
     }
-});
+});/*
 function myFunction(){
     document.getElementById("myDropdown").classList.toggle(show);
 }
@@ -79,10 +79,5 @@ window.onclick = function(event){
         (openDropdown.classList.contains('show'))
         {
 openDropdown.classList.remove('show');
-        }
-    }
-}
 
-
-
-}*/
+/*

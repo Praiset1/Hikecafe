@@ -1,11 +1,11 @@
-body{
+ body{ 
   margin:10;
   background-color: #ff6611;
-  font-family: Roboto;
+  font-family:  Roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  background-image: url("");
+  background-image: url("images/food.jpg");
   background-size:cover ;
 }
 
@@ -279,3 +279,393 @@ input[type=submit]:hover {
   justify-content: center;
   text-align: center;
  }
+
+header{
+  width: 100%;
+  height: 520px;
+  background: url("images/food.jpg");
+  background-position: center;
+  background-size: cove  }
+
+  .whole{
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.center{
+  font-family: 'Elsie Swash Caps', cursive;
+  font-size: 35px;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+
+.titleg{
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-left: 50px;
+  font-size: 15px;
+  font-family: 'roboto', sans-serif;
+}
+
+.container_title{
+  width: 450px;
+  height: 200px;
+  padding-top:100px;
+  margin-left: 450px;
+  color: white;
+  font-family: 'roboto', sans-serif;
+}
+
+
+
+.whole{
+width: 100%;
+height: 520px;
+background-color: rgba(10,10, 10, 0.6);
+margin-top: 0px;
+background-size: cover;
+}
+
+.titlex{
+color: #f2f2f28e;
+width: 700px;
+text-align: center;
+margin-left: 350px;
+font-family: 'Rubik', sans-serif;
+}
+
+.btn2{
+width: 180px;
+height: 50px;
+border: 1px solid orange;
+padding-left: 12px;
+border-radius: 5px;
+background-color: orange;
+color: white;
+cursor: pointer;
+font-family: 'Rubik', sans-serif;
+transition: 0.6s ease;
+align-items: center;
+margin-left: 180px;
+}
+
+.btn2:hover {
+background-color: rgba(125, 0, 100, 0.9);
+font-family: 'Rubik', sans-serif;
+color: white;
+border: 1px solid transparent;
+}
+
+.headx{
+width: 100%;
+background-color: white;
+height: 180px;
+margin-top: 25px;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Rubik', sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+float: left;
+width: 20%;
+height: 200px;
+padding: 0 40px;
+margin-left: 5px;
+margin-right: 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+margin: 0 -5px;
+margin-top: 25px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Style the counter cards */
+.card {
+margin-top: 25px;
+margin-left: 80px; /* this adds the "card" effect */
+padding-right: 16px;
+height: 130px;
+width: 300px;
+text-align: center;
+background-color: transparent;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+.column {
+  width: 100%;
+  display: block;
+  margin-bottom: 0px;
+}
+}
+
+.words{
+color: black;
+font-size: 15px;
+}
+
+.wordx{
+font-weight: bold;
+}
+
+.trending{
+width: 100%;
+font-family: 'Rubik', sans-serif;
+height: 770px;
+background-color: rgba(0, 0, 80, 0.8);
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+position: fixed;
+bottom: 0;
+}
+
+@media (max-height:800px){
+footer { position: static; }
+header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+background-color: black;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px Rubik 'sans-serif';
+padding: 50px 50px 60px 50px;
+margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+width: 30%;
+}
+
+.footer-distributed h3{
+color:  #ffffff;
+font: normal 36px 'Cookie', cursive;
+margin-top: 10px;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+width: 30%;
+}
+
+.footer-distributed h3 span{
+color:  white;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+color:  #ffffff;
+margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+color:  #8f9296;
+font: 'Rubik' sans-serif;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+background-color:  white;
+color: black;
+font-size: 25px;
+width: 38px;
+font: 'Rubik' sans-serif;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;
+font: 'Rubik' sans-serif;
+line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: white;
+vertical-align: middle;
+margin:0;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font: 'Rubik' sans-serif;
+font-size:14px;
+line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+color:  white;
+text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color:  #92999f;
+font: Rubik 'sans-serif';
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color:  #ffffff;
+font-size: 18px;
+font-weight: bold;
+font: Rubik 'sans-serif';
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  orange;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: block;
+  width: 100%;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.footer-distributed .footer-center i{
+  margin-left: 0;
+}
+
+}
+
+#demo{
+color: white;
+margin-left: 5px;
+font-size: 25px;
+}
+
+.btnd{
+width: 250px;
+height: 43px;
+margin-top: 5px;
+background: #cfe1ff;
+border: 1px solid transparent;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+.texta{
+color: white;
+margin-bottom: 0px;
+text-align: start;
+margin-left: 50px;
+font-family: 'Rubik', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background:  white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: orange;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: black;
+}

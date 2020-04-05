@@ -1,0 +1,315 @@
+/*@import url('https://fonts-googleapis.com/css?family-Poppins'); */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+/* order cart page */
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: lightgray;
+}
+
+body {
+  margin: 10;
+  background-color: #ff9800;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/*make images responsive*/
+#imageresp {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* nav */
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+/* navbar links*/
+.navbar a {
+  float: left;
+  width: 100%;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px 30px;
+  height: flex;
+  padding-left: 1px;
+}
+
+/*styling the nav links*/
+ul {
+  position: fixed;
+  top: 0; /*bar fixed at the top during scroll*/
+  width: 100%;
+  list-style-type: none; /*removes bullets from the lists*/
+  margin: 1%; /* distance of bar from edge*/
+  padding: 1% 1%;
+  overflow: hidden;
+  /*background-color: #be2a37;*/
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  /*float: left; /*float ensures the links stay in place*/
+  border-right: 1px solid #bbb;
+}
+
+nav li span {
+  padding-left: 5px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block; /*displaying block helps in making link area clickable*/
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 0% 0%;
+  background-color: #fff;
+}
+
+li a:hover:not(.active) {
+  background-color: lightcoral;
+}
+
+li.active {
+  background-color: #be0575;
+}
+
+.cafename {
+  display: flex;
+  height: 30px;
+  left: 1px;
+  top: 100%;
+
+  font-family: Berkshire Swash;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  padding-left: 5px;
+  padding-right: 20px;
+  border-right: 0px solid #bbb;
+}
+
+/*creating a footer*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  left: 0;
+  background-color: #f62336;
+  color: white;
+  text-align: center;
+  padding: 20px; /* Some padding */
+  margin-bottom: 0px;
+}
+
+/** landing page*/
+
+/* Column container */
+#lay {
+  flex-direction: column;
+  margin-top: 1%;
+  height: 510px;
+  border: 5px dotted #f62336;
+  margin-bottom: 0;
+  max-width: 95%;
+  border-radius: 1px;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  margin-top: 1px;
+  background-color: #ff9800;
+}
+
+.venue {
+  background-repeat: no-repeat;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.left {
+  width: 40%;
+  background-color: #ff9800;
+  padding-left: 0%;
+  padding-right: 0;
+}
+.right {
+  width: 60%;
+}
+
+.img {
+  width: 60%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: flex;
+  padding: 2px;
+}
+
+#imagepic {
+  border: 0px solid lightskyblue;
+}
+.imageback {
+  border: 0px solid lightskyblue;
+  background-image: url(/images/chips.jpg.jpg);
+  background-size: 80% 70%;
+  background-repeat: no-repeat;
+  display: inline; /* get better pic */
+}
+#imag {
+  float: left;
+}
+
+#marq {
+  display: flex;
+  float: right;
+}
+#out {
+  text-align: center;
+  background-color: rgba(76, 0, 130, 0.24);
+}
+
+#imageb {
+  text-align: center;
+}
+
+.button {
+  background-color: lightgray;
+  border: 0px solid;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  font: black;
+}
+.button1 {
+  background-color: lightgray;
+  border: 2px solid;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+/*******************************/
+.cardtime {
+  text-align: left;
+  display: inline-flex;
+}
+.card l {
+  display: flex;
+  float: center;
+  max-width: 100%;
+  height: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: cursive;
+}
+
+.card2 {
+  display: inline-flex;
+  float: botton;
+  max-width: 400px;
+  height: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.cardfeed {
+  margin-top: 0%;
+  box-shadow: 0, 4px, 8px, 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  height: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+/* menu catalogue */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.cart ion-icon {
+  vertical-align: bottom;
+  font-size: 30px;
+  padding-right: 5px;
+  display: left;
+  max-width: 100%;
+  height: 100%;
+}

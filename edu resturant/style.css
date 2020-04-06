@@ -26,6 +26,7 @@
         border: 2px solid black;
         background: #f1f1f1;
         resize: vertical;
+
     
 
     
@@ -48,16 +49,18 @@
     height: 40px;
     border-radius: 10px;
     margin:30px;
+    padding-left:35px;
 
 }
 .btn{
     width: 260px;
     height: 40px;
-    background: red;
+    background:grey;
     border-radius: 10px;
     margin: 40px auto;
     display: block;
     margin-left: 30px;
+
 }
 .tbox{
     
@@ -145,6 +148,7 @@ ul li a:hover{
 }
 .cafe{
     text-align: center;
+    font-family:cursive;
     color:white;
     margin-right: 30px;
     word-spacing: 10px;}
@@ -202,3 +206,124 @@ ul li a:hover{
         color:white;
     }
 
+/* [PAGE & WRAPPER] */
+html, body {
+    margin : 0;
+    padding : 0;
+    font-family: 'Rubik', sans-serif;
+  }
+  ​
+  #cart-wrap { 
+    display: flex; 
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    width: 100%;
+  }
+  #cart-products { width: 50% }
+  #cart-list { width: 50% }
+  #cart-products, #cart-list { padding: 20px }
+  ​
+  ​
+  /* [MOVIES] */
+  #cart-products {
+    display: grid;
+    width: 800px;
+    background-color: white;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    border: 1px solid transparent;
+  }
+  .p-item {
+    padding: 0px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+  }
+  .p-img {
+    width: 340px;
+    height: 195px;
+    padding-left: 3px;
+    padding-top: 3px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .p-name {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+    font-family: 'Rubik' sans-serif;
+    font-size: 1.1em;
+  }
+  .p-price {
+    padding-top: 10px;
+    color: orange;
+    text-align: center;
+  }
+  .p-desc {
+    color: black;
+    padding-top: 5px;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+  }
+  .p-add {
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  ​
+  /* [MOVIE LIST] */
+  #cart-list div.c-item:nth-child(odd) {
+    background: #cfe1ff;
+    border: 1px solid  transparent;
+    border-radius: 5px;
+  }
+  .c-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid  transparent;
+    border-radius: 5px;
+    background: #cfe1ff;
+  }
+  .c-qty, .c-name {
+    display: inline-block;
+    border: 1px solid  transparent;
+    border-radius: 5px;
+  }
+  .c-qty {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
+    background-color: rgba(12, 12, 12, 0.2);
+    text-align: center;
+    color: white;
+    border: 1px solid  transparent;
+    border-radius: 5px;
+  }
+  .c-empty, .c-checkout {
+    border: none;
+    width: 100%;
+    padding: 10px;
+  }
+  .c-empty {
+    background-color: rgba(192, 192, 192, 0.2);
+    border: 1px solid  transparent;
+    border-radius: 5px;
+    color: white;
+  }
+  .c-checkout {
+    margin-top: 5px;
+    background: orange;
+    border: 1px solid  transparent;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Rubik';
+  }
+  

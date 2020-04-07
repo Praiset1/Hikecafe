@@ -57,7 +57,7 @@ var products = {
       part.classList.add("p-desc");
       item.appendChild(part);
   
-      
+      // Add to cart
       part = document.createElement("input");
       part.type = "button";
       part.value = "Add to Cart";
@@ -73,27 +73,23 @@ var products = {
 
   var cart = {
     data : null, // current cart
-    
+  
+    /* [C1] LOCALSTORAGE */
     load : function(){
     // load() : load previous  cart
-
-   
+  
       cart.data = localStorage.getItem("cart");
       if (cart.data == null) { cart.data = {}; }
       else { cart.data = JSON.parse(cart.data); }
     },
   
     save : function(){
-
     // save() : save current  cart
   
       localStorage.setItem("cart", JSON.stringify(cart.data));
     },
   
     /* [C2] CART ACTIONS */
-
-    
-develop
     add : function(){
     // add() : add selected item to cart
   

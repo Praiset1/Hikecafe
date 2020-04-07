@@ -12,20 +12,6 @@ header {
   position: relative;
 }
 
-/* order cart page */
-.overlay {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  height: 50%;
-  right: 0;
-  bottom: 0;
-  padding: 0 !important;
-  margin: 0 !important;
-  background-color: lightgray;
-}
-
 body {
   margin: 10;
   background-color: #ff9800;
@@ -42,76 +28,7 @@ body {
   height: auto;
 }
 
-/* nav */
-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 50px 60px 0 60px;
-}
 
-/* navbar links*/
-.navbar a {
-  float: left;
-  width: 100%;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 0px 30px;
-  height: flex;
-  padding-left: 1px;
-}
-
-/*styling the nav links*/
-ul {
-  position: fixed;
-  top: 0; /*bar fixed at the top during scroll*/
-  width: 100%;
-  list-style-type: none; /*removes bullets from the lists*/
-  margin: 1%; /* distance of bar from edge*/
-  padding: 1% 1%;
-  overflow: hidden;
-  /*background-color: #be2a37;*/
-}
-
-nav li {
-  list-style: none;
-  display: inline-block;
-  padding-right: 10px;
-  padding-left: 10px;
-  /*float: left; /*float ensures the links stay in place*/
-  border-right: 1px solid #bbb;
-}
-
-nav li span {
-  padding-left: 5px;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block; /*displaying block helps in making link area clickable*/
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  padding: 0% 0%;
-  background-color: #fff;
-}
-
-li a:hover:not(.active) {
-  background-color: lightcoral;
-}
-
-li.active {
-  background-color: #be0575;
-}
 
 .cafename {
   display: flex;
@@ -130,22 +47,6 @@ li.active {
   padding-right: 20px;
   border-right: 0px solid #bbb;
 }
-
-/*creating a footer*/
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: block;
-  left: 0;
-  background-color: #f62336;
-  color: white;
-  text-align: center;
-  padding: 20px; /* Some padding */
-  margin-bottom: 0px;
-}
-
-/** landing page*/
 
 /* Column container */
 #lay {
@@ -216,10 +117,6 @@ li.active {
 #marq {
   display: flex;
   float: right;
-}
-#out {
-  text-align: center;
-  background-color: rgba(76, 0, 130, 0.24);
 }
 
 #imageb {

@@ -5,11 +5,12 @@
 }
 
 body {
-  background: url(images/background.jpeg) no-repeat center center fixed;
+  /*background: url(images/background.jpeg) no-repeat center center fixed*/
+  background-repeat:no-repeat;
   background-size: cover;
   font-family: sans serif;
   background-color: #ff9800;
-}
+} 
 
 .head {
   float: left;
@@ -31,18 +32,6 @@ header {
   height: 150px;
   position: relative;
 }
-/*.overlay {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 50%;
-    right: 0;
-    bottom: 0;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: lightgray;
-  }*/
 
 .nav {
   position: absolute;
@@ -122,7 +111,7 @@ li a {
   text-decoration: none;
 }
 
-.container {
+.container, products-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -200,6 +189,7 @@ showcase add-cart {
   text-align: center;
 }
 
+
 .image:hover .cart1,
 .image:hover .cart2,
 .image:hover .cart3,
@@ -211,4 +201,86 @@ showcase img:hover .cart5 {
   text-decoration: none;
 }
 
-/* end of menu display */
+/* ----CART / MENU PAGE ---- */
+
+.products-container{
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.products-container ion-icon{
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.product-header{
+width: 100%;
+max-width: 650px;
+display: flex;
+justify-content:flex-start;
+border-bottom: 4px solid lightgray;
+margin: 0 auto;
+}
+
+.product-title{
+  width:45%;
+ }
+
+.price{
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.quantity{
+width: 15%;
+border-bottom: 1px solid lightgray;
+display: flex;
+align-items: center;
+}
+
+.total{
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle, .basketTotal{
+  width:30%;
+}
+
+/* consider page resposiveness */
+@media screen and (max-width: 600px) {
+  .nav, .container, .column{
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav, showcase{
+    float: none;
+    width: 100%;
+  }
+}

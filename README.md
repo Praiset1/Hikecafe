@@ -5,4 +5,3 @@
 ##Required Features 1 users can create Register and login in accounts. 2 users can order for a certain type of food. 3 users can see a list of all foods. 4 users can see lists of all drinks. 5 users can serch for available foods on the menu.
 
 ##setup 1 pivotal tracker links https://www.pivotaltracker.com/n/projects/2440498
-## setup 2 https://github.com/Praiset1/Hikecafe/edit/gh-pages/README.md

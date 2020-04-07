@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    font-family: Roboto, sans-serif;
+}
+
+.sign-up-form {
+    width: 500px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: orange;
+    padding: 40px;
+    margin: 8% auto 0;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.loginbox {
+    width: 500px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: orange;
+    padding: 40px;
+    margin: 8% auto 0;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.user {
+    width: 260px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.btn {
+    width: 260px;
+    height: 40px;
+    background: red;
+    border-radius: 10px;
+    margin: 40px auto;
+    display: block;
+    margin-left: 30px;
+}
+
+.tbox {
+    display: block;
+    width: 260px;
+    height: 40px;
+    box-sizing: 20px;
+    font-size: 15px;
+    margin-right: 200px;
+    background-color: orange;
+    margin-right: 80px;
+    border-radius: 10px;
+}
+
+#imageb {
+    justify-content: center;
+    float: right;
+}
+
+#imagebio {
+    border: 5px solid;
+    float: right;
+}
+
+#imagec {
+    justify-content: left;
+}
+
+.imagekk {
+    float: right;
+    border: 20px;
+    margin-right: 50px;
+}
+
+.about {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin-left: 200px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    padding: 0 20px;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+.footer {
+    position: relative;
+    text-align: center;
+    margin-top: -100px;
+    clear: both;
+    height: 100px;
+}
+
+.grid {
+    display: flex;
+}
+
+.fries {
+    margin-left: 20px;
+    padding: 30px;
+    height: 300px;
+}
+
+.cafe {
+    text-align: justify;
+    margin-left: 30px;
+    word-spacing: 12;
+}
+
+.dropbtn {
+    color: burlywood;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+}
+
+.drop-content a:hover {
+    background-color: blueviolet;
+}
+
+.show {
+    display: block;
+}
+
+#logo {}
+
+.about {
+    text-align: center;
+}

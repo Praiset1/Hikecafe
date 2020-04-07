@@ -114,6 +114,7 @@ let productContainer = document.querySelector(".products");
 
 if(cartIems && productContainer){
   productContainer.innerHTML = '';
+
   Object.values(cartItems)
   .map(item=>{productContainer.innerHTML += `<div class="product"> <ion-icon name="close-circle"></ion-icon>
   <img src="./images/${item.tag}.jpg"> 
@@ -122,13 +123,15 @@ if(cartIems && productContainer){
   `<div class = "price">$${item.price}.00</div>`
  `<div class = "quantity"><ion-ionic class="decrease" name="arrow-dropleft-circle"></ion-icon>
   <span>${item.inCart}</span>
+
   <ion-ionic class="increase" name="arrow-dropright-circle"> </ion-icon></div>`
- `<div class="total">$${item.inCart * item.price},00 </div>` 
+ `<div class="total"> $${item.inCart * item.price},00 </div>` 
   });
+
   productContainer.innerHTML += `<div class="basketTotalContanier">
   <h4 class ="basketTotalTitle"> Basket Total </h4>
   <h4 class ="basketTotal">$${cartCost}.00 </h4>`;
-
+console.log(productContainer);
 }
 }
 onLoadCartNumbers();

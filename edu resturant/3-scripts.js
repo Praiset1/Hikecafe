@@ -73,23 +73,27 @@ var products = {
 
   var cart = {
     data : null, // current cart
-  
-  
+    
     load : function(){
     // load() : load previous  cart
-  
+
+   
       cart.data = localStorage.getItem("cart");
       if (cart.data == null) { cart.data = {}; }
       else { cart.data = JSON.parse(cart.data); }
     },
   
     save : function(){
+
     // save() : save current  cart
   
       localStorage.setItem("cart", JSON.stringify(cart.data));
     },
   
     /* [C2] CART ACTIONS */
+
+    
+develop
     add : function(){
     // add() : add selected item to cart
   
